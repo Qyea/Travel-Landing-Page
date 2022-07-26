@@ -444,13 +444,11 @@ html{
     font-size: 18px;
     line-height: 24px;
     color: #FFFFFF;
-    text-decoration: none;    
+    text-decoration: none; 
 }
-
 .header__link:hover,.header__link:focus, .header__link:active{
     opacity: 0.75;
 }
-
 .header__burger{
     display: none;
     width: 40px;
@@ -466,7 +464,6 @@ html{
     position: absolute;
     left: 0;    
 }
-
 .burger__line_first{
     top: 0;
 }
@@ -493,13 +490,12 @@ body{
 /*intro start*/
 .intro{
     min-height: 100vh;
-    background: url(/img/intro-bg.jpg) no-repeat center;
+    background: url(/img/intro-bg-min.jpg) no-repeat center;
     background-size: cover;
     padding-top: 263px;
     padding-bottom: 223px;
     margin-bottom: 100px;
 }
-
 .intro__title{
     max-width: 619px;
     margin-bottom: 22px;
@@ -509,7 +505,6 @@ body{
     line-height: 60px;
     color: #FFFFFF;
 }
-
 .intro__subtitle{
     max-width: 546px;
     font-weight: 400;
@@ -518,12 +513,10 @@ body{
     color: #FFFFFF;
     margin-bottom: 59px;
 }
-
 .search-form__info{
     display: flex;
     flex-wrap: wrap;
 }
-
 .search-form__field{
     width: 297px;
     background: transparent url(/img/svg/circle-icon.svg) no-repeat left 6px;
@@ -537,13 +530,11 @@ body{
     font-size: 18px;
     color: white;
 }
-
 .search-form__field::placeholder{
     font-weight: 500;
     font-size: 18px;
     color: white;
 }
-
 .search-form__submit{
     padding: 15px 39px;
     text-transform: uppercase;
@@ -592,12 +583,10 @@ body{
     grid-column: span 1;
     margin-bottom: 112px;
 }
-
 .benefits__card-pic{
     max-width: 66px;
     margin-bottom: 37px;
 }
-
 .benefits__card-thumb{
     display: block;
 }
@@ -636,7 +625,6 @@ body{
 .places__title{
     margin-right: 15px;
 }
-
 .places__caption{
     display: flex;
     flex-wrap: wrap;
@@ -644,7 +632,6 @@ body{
     justify-content: space-between;
     margin-bottom: 36px;
 }
-
 .places__view-all{
     font-size: 16px;
     color: #006DFE;
@@ -678,24 +665,19 @@ body{
     left: 0;
     z-index: 2;
 }
-
 .places__card:hover,.places__card-pic{
     transform: scale(1.05);
     transition: 0.15s;
 }
-
 .places__card_size_lg{
     grid-column: span 3;
 }
-
 .places__card_size_sm{
     grid-column: span 2;
 }
-
 .places__card-pic{
     width: 100%;
 }
-
 .places__card-pic_size_lg{
     height: 354px;
     object-fit: cover;
@@ -740,7 +722,6 @@ body{
 .tour__info{
     padding-left: 47px;
 }
-
 .tour__title{
     font-weight: 500;
     font-size: 30px;
@@ -768,7 +749,6 @@ body{
     background: url(/img/svg/arrow.svg) no-repeat right center;
     opacity: 0.75;
 }
-
 /*tours end*/
 
 /*top start*/
@@ -849,7 +829,6 @@ body{
     text-decoration: none;
     margin: auto 0 0 0;
 }
-
 .top__card-more:hover, .top__card-more:focus, .top__card-more:active{
     background: #0e66da;
 }
@@ -881,16 +860,13 @@ body{
     background: #0E1D28;
     padding: 119px 0; 
 }
-
 .footer__item{
     display: flex;
     flex-wrap: wrap;
 }
-
 .footer__logo{
     width: 50%;
 }
-
 .footer__nav{
     width: 50%;
     display: flex;
@@ -904,7 +880,6 @@ body{
     line-height: 24px;
     color: white;
 }
-
 .footer__menu-link{
     font-weight: 400;
     font-size: 16px;
@@ -912,7 +887,6 @@ body{
     color: white;
     text-decoration: none;
 }
-
 .footer__menu-link:hover, .footer__menu-link:focus, .footer__menu-link:active{
     opacity: 0.75;
 }
@@ -1039,7 +1013,6 @@ body{
     .tour__pic_mob-first{
         grid-row-start: -1;
     }
-    
 }
 
 @media screen and (max-width: 960px){
@@ -1062,7 +1035,12 @@ body{
     .benefits__card{
         margin-bottom: 60px;
     }
-    
+    .places__caption{
+       margin-bottom: 0; 
+    }
+    .places__view-all{
+      margin-bottom: 25px;  
+    }
     .places__card_size_lg{
         grid-column: span 6;
     }
@@ -1074,6 +1052,9 @@ body{
     }
     .tour__info{
         padding-left: 0;
+    }
+    .top__card-stats{
+        max-width: 386px;
     }
     .tour__title{
         margin-bottom: 25px;
@@ -1118,7 +1099,7 @@ body{
     .footer__menu{
         width: 50%;
         margin-bottom: 24px;
-    }
+    } 
 }
 
 /* media  end */
